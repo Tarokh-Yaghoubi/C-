@@ -6,7 +6,7 @@ int calculate(int);
 
 int main()
 {
-    // write your code here 
+    // write your code here
 
     int n;
     int result = 0;
