@@ -19,8 +19,8 @@ int main()
     cout << "Sub = " << sub << endl;
     cout << "Div = " << division << endl;
     cout << "Multiplication = " << multiplication << endl;
-
-    system("pause");
+    
+    system("pause") ;
     return 0;
 
 }
