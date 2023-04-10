@@ -1,5 +1,8 @@
 #include <iostream>
 
+
+// tarokh yaghoubi @ github.com 
+
 using namespace std;
 
 int main()

@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// tarokh yaghoubi @ github.com
+
 int calculate(int);
 
 int main()

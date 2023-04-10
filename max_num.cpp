@@ -2,6 +2,9 @@
 
 using namespace std;
 
+
+// tarokh yaghoubi @ github.com
+
 int max(int a, int b, int c);
 
 int main()

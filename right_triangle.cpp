@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// tarokh yaghoubi @ github.com
+
 bool isRightTriangle(int, int, int);
 
 int main()

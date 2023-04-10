@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// tarokh yaghoubi @ github.com
+
 float solve(int a);
 
 int main()
