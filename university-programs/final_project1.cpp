@@ -66,6 +66,7 @@ void convertToWords(int num)
 		convertToWords(num / 100);
 		cout << "hundred ";
 		num %= 100;
+
 	}
 	
 	if (num > 0)
