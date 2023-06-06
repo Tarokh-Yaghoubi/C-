@@ -18,4 +18,8 @@ int main()
 	cin >> number;
 	result = (number % 2 == 0) ? "Even" : "Odd";
 	cout << result;
+
+	system("pause");
+	return 0;
+
 }
