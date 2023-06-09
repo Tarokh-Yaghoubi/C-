@@ -10,20 +10,6 @@
 
 using namespace std;
 
-void bubbleSort(int[], int);
-
-int main()
-{
-	int nums[10] = { 12, 100, 150, 95, 84, 63, 51, 17, 400, 23 };
-	int len = sizeof(nums) / sizeof(nums[0]);
-	bubbleSort(nums, len);
-	
-	for (int i = 0; i < len; ++i)
-		cout << nums[i] << " ";
-
-	return 0;
-}
-
 void bubbleSort(int numbers[], int len)
 {
 	int i, j;
@@ -40,3 +26,17 @@ void bubbleSort(int numbers[], int len)
 		}
 	}
 }
+
+
+int main()
+{
+	int nums[10] = { 12, 100, 150, 95, 84, 63, 51, 17, 400, 23 };
+	int len = sizeof(nums) / sizeof(nums[0]);
+	bubbleSort(nums, len);
+	
+	for (int i = 0; i < len; ++i)
+		cout << nums[i] << " ";
+
+	return 0;
+}
+
