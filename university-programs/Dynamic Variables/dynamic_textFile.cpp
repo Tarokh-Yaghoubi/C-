@@ -47,6 +47,7 @@ int main()
 	delete[] words;
 	words = NULL;		// to avoid dangling pointer 
 
+
 	return 0;
 }
 
@@ -94,5 +95,4 @@ void readFile()
 	infile.close();
 
 }
-
 
