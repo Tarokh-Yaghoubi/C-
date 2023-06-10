@@ -45,6 +45,7 @@ int main()
 	cout << "The word " << word << " appears " << count << " times in the file . " << endl;
 
 	delete[] words;
+	words = NULL;		// to avoid dangling pointer 
 
 	return 0;
 }
