@@ -6,15 +6,19 @@ int main()
 {
 	Rational rational_1;
 	Rational rational_2;
-	Rational rational_3;
-	Rational rational_4;
+	Rational result;
+	
+	rational_1.setValues(4, 2);
+	rational_2.setValues(4, 2);
 
-	rational_1 = rational_3.addition(rational_2);
-	rational_4 = rational_3.multiplication(rational_2);
+	result = rational_1.addition(rational_2);
+	result.printRational();
 
-	rational_1.printRational();
-	rational_4.printRational();
-	rational_1.printAsDouble();
+	result = rational_2.addition(rational_1);
+	result.printRational();
+	
+	result = rational_1.multiplication(rational_2);
+	result.printAsDouble();
 
 	system("pause");
 	return 0;
