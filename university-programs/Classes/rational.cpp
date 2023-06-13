@@ -1,7 +1,7 @@
 // Definition of Class member methods 
 
 #include <iostream>
-#include "rational.h"
+#include "methods.h"
 
 
 Rational::Rational()

@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include "rational.h"
+#include "methods.h"
 
 int main()
 {
