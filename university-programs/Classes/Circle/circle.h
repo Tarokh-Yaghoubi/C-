@@ -13,10 +13,11 @@ public:
 	float perime();
 	void setRadius(float r);
 	Circle();
-	/*~Circle()
+	
+	~Circle()
 	{
 		std::cout << "Contructor Executed \n";
-	}*/
+	}
 
 };
 
