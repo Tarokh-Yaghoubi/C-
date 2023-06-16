@@ -15,7 +15,7 @@ int main()
 	int value = 0;
 
 	// Read until the <	EOF >
-
+	std::cout << "Hit CTRL+Z or enter a non-integer to stop the program : " << std::endl;
 	while (std::cin >> value)
 		sum += value;
 	
