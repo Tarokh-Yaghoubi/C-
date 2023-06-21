@@ -67,3 +67,24 @@ include_directories("C:/Program Files (x86)/Intel/oneAPI/ipp/latest/include")
 link_directories("C:/Program Files (x86)/Intel/oneAPI/ipp/latest/lib/intel64")
 
 
+target_link_libraries(fftProject_main PUBLIC
+    Qt::Charts
+    Qt::Core
+    Qt::Gui
+)
+
+install(TARGETS fftProject_main
+    RUNTIME DESTINATION "${INSTALL_EXAMPLEDIR}"
+    BUNDLE DESTINATION "${INSTALL_EXAMPLEDIR}"
+    LIBRARY DESTINATION "${INSTALL_EXAMPLEDIR}"
+)
+
+set(CMAKE_AUTOMOC ON)
+
+if(NOT DEFINED INSTALL_EXAMPLESDIR)
+    set(INSTALL_EXAMPLESDIR "examples")
+endif()
+
+set(INSTALL_EXAMPLEDIR "${INSTALL_EXAMPLESDIR}/charts/splinechart")
+
+find_package(Qt6 REQUIRED COMPONENTS Charts Core Gui)
