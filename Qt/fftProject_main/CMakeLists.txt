@@ -61,3 +61,9 @@ install(TARGETS fftProject_main
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(fftProject_main)
 endif()
+
+
+include_directories("C:/Program Files (x86)/Intel/oneAPI/ipp/latest/include")
+link_directories("C:/Program Files (x86)/Intel/oneAPI/ipp/latest/lib/intel64")
+
+
