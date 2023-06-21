@@ -2,6 +2,7 @@
 #include <cmath>
 #include <cctype>
 
+#include <ippcore.h>
 
 using namespace std;
 
