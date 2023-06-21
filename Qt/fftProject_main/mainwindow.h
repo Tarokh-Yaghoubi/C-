@@ -25,6 +25,13 @@
 #include "ipps.h"
 #include "ippcc.h"
 
+
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QMainWindow>
+#include <QtCharts/QChartView>
+#include <QtCharts/QSplineSeries>
+
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -45,6 +52,8 @@ private slots:
     void on_pushButton_write_clicked();
 
     void on_pushButton_read_clicked();
+
+    void on_pushButton_chart_clicked();
 
 private:
     Ui::MainWindow *ui;
