@@ -30,6 +30,7 @@ public:
     QPushButton *pushButton_write;
     QTextEdit *textEdit;
     QTextEdit *textEdit_writeFile;
+    QPushButton *pushButton_chart;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -58,6 +59,9 @@ public:
         textEdit_writeFile = new QTextEdit(centralwidget);
         textEdit_writeFile->setObjectName("textEdit_writeFile");
         textEdit_writeFile->setGeometry(QRect(430, 170, 301, 241));
+        pushButton_chart = new QPushButton(centralwidget);
+        pushButton_chart->setObjectName("pushButton_chart");
+        pushButton_chart->setGeometry(QRect(350, 490, 80, 61));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -79,6 +83,7 @@ public:
         pushButton_read->setText(QCoreApplication::translate("MainWindow", "Read", nullptr));
         pushButton_generate->setText(QCoreApplication::translate("MainWindow", "Generate", nullptr));
         pushButton_write->setText(QCoreApplication::translate("MainWindow", "Write", nullptr));
+        pushButton_chart->setText(QCoreApplication::translate("MainWindow", "Chart", nullptr));
     } // retranslateUi
 
 };

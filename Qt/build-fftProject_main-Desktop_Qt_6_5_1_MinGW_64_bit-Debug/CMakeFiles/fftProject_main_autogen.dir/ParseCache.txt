@@ -21,6 +21,7 @@ C:/Users/10/Desktop/C-plus-plus/Qt/fftProject_main/mainwindow.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/QChartView
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/QLegend
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/QLineSeries
+ mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/QSplineSeries
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/QXYSeries
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qabstractaxis.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qabstractseries.h
@@ -29,6 +30,7 @@ C:/Users/10/Desktop/C-plus-plus/Qt/fftProject_main/mainwindow.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qchartview.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qlegend.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qlineseries.h
+ mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qsplineseries.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qtcharts-config.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qtchartsexports.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCharts/qxyseries.h
@@ -39,6 +41,7 @@ C:/Users/10/Desktop/C-plus-plus/Qt/fftProject_main/mainwindow.h
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCore/QList
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCore/QMargins
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.5.1/mingw_64/include/QtCore/QPointF
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCore/QRect
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCore/QSize
  mdp:C:/Qt/6.5.1/mingw_64/include/QtCore/QSizeF

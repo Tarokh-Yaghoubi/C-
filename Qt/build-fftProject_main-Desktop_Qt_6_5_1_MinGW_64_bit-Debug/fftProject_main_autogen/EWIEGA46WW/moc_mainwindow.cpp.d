@@ -18,6 +18,7 @@ C:/Users/10/Desktop/C-plus-plus/Qt/build-fftProject_main-Desktop_Qt_6_5_1_MinGW_
   C:/Qt/6.5.1/mingw_64/include/QtCharts/QChartView \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/QLegend \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/QLineSeries \
+  C:/Qt/6.5.1/mingw_64/include/QtCharts/QSplineSeries \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/QXYSeries \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qabstractaxis.h \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qabstractseries.h \
@@ -26,6 +27,7 @@ C:/Users/10/Desktop/C-plus-plus/Qt/build-fftProject_main-Desktop_Qt_6_5_1_MinGW_
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qchartview.h \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qlegend.h \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qlineseries.h \
+  C:/Qt/6.5.1/mingw_64/include/QtCharts/qsplineseries.h \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qtcharts-config.h \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qtchartsexports.h \
   C:/Qt/6.5.1/mingw_64/include/QtCharts/qxyseries.h \
@@ -36,6 +38,7 @@ C:/Users/10/Desktop/C-plus-plus/Qt/build-fftProject_main-Desktop_Qt_6_5_1_MinGW_
   C:/Qt/6.5.1/mingw_64/include/QtCore/QList \
   C:/Qt/6.5.1/mingw_64/include/QtCore/QMargins \
   C:/Qt/6.5.1/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.5.1/mingw_64/include/QtCore/QPointF \
   C:/Qt/6.5.1/mingw_64/include/QtCore/QRect \
   C:/Qt/6.5.1/mingw_64/include/QtCore/QSize \
   C:/Qt/6.5.1/mingw_64/include/QtCore/QSizeF \
