@@ -14,13 +14,11 @@ int main() {
         x = dis(gen);
     }
 
-    // Save the data to a file
     std::ofstream out_file("data.txt");
     for (const auto& x : data) {
         out_file << x << std::endl;
     }
 
-    // Open the file and apply FFT using FFTW3
     std::vector<std::complex<float>> in_data(1000);
     std::ifstream in_file("data.txt");
     
@@ -34,7 +32,6 @@ int main() {
     fftwf_execute(plan);
     fftwf_destroy_plan(plan);
 
-    // Initialize the ZeroMQ context and socket
     zmq::context_t context(1);
     zmq::socket_t socket(context, ZMQ_PUSH);
     socket.bind("tcp://*:5555");
@@ -44,12 +41,11 @@ int main() {
     memcpy(message.data(), in_data.data(), message.size());
     socket.send(message, zmq::send_flags::none);
 
-    // Print SENT on the screen
     std::cout << "SENT" << std::endl;
 
-    // Shutdown the server
     socket.close();
     context.close();
     return 0;
 
 }
+
