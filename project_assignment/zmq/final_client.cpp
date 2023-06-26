@@ -1,3 +1,12 @@
+
+/*
+
+    Author : Tarokh Yaghoubi
+    Date : June 2023
+
+
+*/
+
 #include <iostream>
 #include <fstream>
 #include <complex>
@@ -5,12 +14,12 @@
 #include <fftw3.h>
 
 int main() {
-    // Initialize the ZeroMQ context and socket
+    // Initialize the ZeroMQ context , Sock
     zmq::context_t context(1);
     zmq::socket_t socket(context, ZMQ_PULL);
     socket.connect("tcp://localhost:5555");
 
-    // Receive the data from the server
+
     zmq::message_t message;
     socket.recv(message, zmq::recv_flags::none);
     std::vector<std::complex<float>> out_data(message.size() / sizeof(std::complex<float>));
@@ -22,10 +31,8 @@ int main() {
         out_file << x.real() << std::endl;
     }
 
-    // Print DONE on the screen
     std::cout << "DONE" << std::endl;
 
-    // Shutdown the client
     socket.close();
     context.close();
     return 0;
