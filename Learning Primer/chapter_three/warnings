@@ -1,0 +1,231 @@
+hexdigits.cpp: In function ‘int main()’:
+hexdigits.cpp:21:42: error: no match for ‘operator!=’ (operand types are ‘std::istream’ {aka ‘std::basic_istream<char>’} and ‘char’)
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                 ~~~~~~~~ ^~ ~~~
+      |                                      |      |
+      |                                      |      char
+      |                                      std::istream {aka std::basic_istream<char>}
+hexdigits.cpp:21:42: note: candidate: ‘operator!=(int, int)’ (built-in)
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                 ~~~~~~~~~^~~~~~
+hexdigits.cpp:21:42: note:   no known conversion for argument 1 from ‘std::istream’ {aka ‘std::basic_istream<char>’} to ‘int’
+In file included from /usr/include/c++/11/iosfwd:40,
+                 from /usr/include/c++/11/ios:38,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/postypes.h:227:5: note: candidate: ‘template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)’
+  227 |     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/postypes.h:227:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::fpos<_StateT>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:64,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/stl_pair.h:496:5: note: candidate: ‘template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)’
+  496 |     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_pair.h:496:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::pair<_T1, _T2>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/stl_iterator.h:431:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)’
+  431 |     operator!=(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:431:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/stl_iterator.h:470:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)’
+  470 |     operator!=(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:470:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::reverse_iterator<_Iterator>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/stl_iterator.h:1550:5: note: candidate: ‘template<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)’
+ 1550 |     operator!=(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1550:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/stl_algobase.h:67,
+                 from /usr/include/c++/11/bits/char_traits.h:39,
+                 from /usr/include/c++/11/ios:40,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/stl_iterator.h:1607:5: note: candidate: ‘template<class _Iterator> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)’
+ 1607 |     operator!=(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/stl_iterator.h:1607:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::move_iterator<_IteratorL>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/string:41,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/allocator.h:225:5: note: candidate: ‘template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)’
+  225 |     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/allocator.h:225:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::allocator<_CharT>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/string_view:570:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)’
+  570 |     operator!=(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:570:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::basic_istream<char>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/string_view:576:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)’
+  576 |     operator!=(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:576:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::basic_istream<char>’ is not derived from ‘std::basic_string_view<_CharT, _Traits>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/basic_string.h:48,
+                 from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/string_view:583:5: note: candidate: ‘template<class _CharT, class _Traits> constexpr bool std::operator!=(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)’
+  583 |     operator!=(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+/usr/include/c++/11/string_view:583:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   mismatched types ‘std::basic_string_view<_CharT, _Traits>’ and ‘char’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/basic_string.h:6302:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6302 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6302:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/basic_string.h:6315:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)’
+ 6315 |     operator!=(const _CharT* __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6315:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   mismatched types ‘const _CharT*’ and ‘std::basic_istream<char>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/string:55,
+                 from /usr/include/c++/11/bits/locale_classes.h:40,
+                 from /usr/include/c++/11/bits/ios_base.h:41,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/basic_string.h:6327:5: note: candidate: ‘template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)’
+ 6327 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/basic_string.h:6327:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/locale_facets.h:48,
+                 from /usr/include/c++/11/bits/basic_ios.h:37,
+                 from /usr/include/c++/11/ios:44,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/bits/streambuf_iterator.h:232:5: note: candidate: ‘template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)’
+  232 |     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     ^~~~~~~~
+/usr/include/c++/11/bits/streambuf_iterator.h:232:5: note:   template argument deduction/substitution failed:
+hexdigits.cpp:21:45: note:   ‘std::istream’ {aka ‘std::basic_istream<char>’} is not derived from ‘const std::istreambuf_iterator<_CharT, _Traits>’
+   21 |         while (std::cin >> n && std::cin != 'z')
+      |                                             ^~~
+In file included from /usr/include/c++/11/bits/ios_base.h:46,
+                 from /usr/include/c++/11/ios:42,
+                 from /usr/include/c++/11/ostream:38,
+                 from /usr/include/c++/11/iostream:39,
+                 from hexdigits.cpp:3:
+/usr/include/c++/11/system_error:416:3: note: candidate: ‘bool std::operator!=(const std::error_code&, const std::error_code&)’
+  416 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/11/system_error:416:32: note:   no known conversion for argument 1 from ‘std::istream’ {aka ‘std::basic_istream<char>’} to ‘const std::error_code&’
+  416 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/system_error:421:3: note: candidate: ‘bool std::operator!=(const std::error_code&, const std::error_condition&)’
+  421 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/11/system_error:421:32: note:   no known conversion for argument 1 from ‘std::istream’ {aka ‘std::basic_istream<char>’} to ‘const std::error_code&’
+  421 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/system_error:426:3: note: candidate: ‘bool std::operator!=(const std::error_condition&, const std::error_code&)’
+  426 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+/usr/include/c++/11/system_error:426:37: note:   no known conversion for argument 1 from ‘std::istream’ {aka ‘std::basic_istream<char>’} to ‘const std::error_condition&’
+  426 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+/usr/include/c++/11/system_error:431:3: note: candidate: ‘bool std::operator!=(const std::error_condition&, const std::error_condition&)’
+  431 |   operator!=(const error_condition& __lhs,
+      |   ^~~~~~~~
+/usr/include/c++/11/system_error:431:37: note:   no known conversion for argument 1 from ‘std::istream’ {aka ‘std::basic_istream<char>’} to ‘const std::error_condition&’
+  431 |   operator!=(const error_condition& __lhs,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
